@@ -1,8 +1,8 @@
-const { app , BrowseWindow } = require('electron')
+const { app , BrowserWindow  } = require('electron')
 let win
 function createWindow() {
     //创建浏览器窗口
-    win = new BrowseWindow({ width:800,height : 600})
+    win = new BrowserWindow({ width:800,height : 600})
 
     //加载应用
     win.loadURL('http://localhost:3000')
